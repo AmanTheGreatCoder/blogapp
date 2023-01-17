@@ -6,19 +6,9 @@ import "../css/Navbar.css";
 
 const Navbar = ({ user }) => {
   const { theme, setTheme } = useContext(ThemeContext);
-  // useEffect(() => {
-  //   fetch("http://localhost:4000/profile", {
-  //     method: "GET",
-  //     credentials: "include",
-  //   }).then((response) => {
-  //     response.json().then((data) => {
-  //       console.log("Data " + JSON.stringify(data));
-  //     });
-  //   });
-  // }, []);+
 
   const logout = () => {
-    window.open("http://localhost:4000/auth/logout", "_self");
+    window.open("https://blog-api-3tml.onrender.com/auth/logout", "_self");
   };
 
   const toggleTheme = () => {
