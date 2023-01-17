@@ -1,0 +1,141 @@
+.postList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+#light .postCard {
+  background-color: var(--light-post-bg-color);
+  color: var(--light-post-text-color);
+}
+
+#light .postButton {
+  background-color: var(--light-button-bg-color);
+  color: var(--light-button-text-color);
+}
+
+#dark .postCard {
+  background-color: var(--dark-post-bg-color);
+  color: var(--dark-post-text-color);
+}
+
+#dark .postButton {
+  background-color: var(--dark-button-bg-color);
+  color: var(--dark-button-text-color);
+}
+
+.postCard {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.5s ease-in;
+}
+
+.postImage {
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+
+.postImage img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  object-fit: cover;
+}
+
+.postProfileImg {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.postProfileImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.postContent {
+  margin: 10px;
+}
+
+.postTitle {
+  position: relative;
+  font-weight: 600;
+  font-size: 17px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.postDetails {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.postAuthor {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.postedOn {
+  display: flex;
+}
+
+.postDate {
+  margin-right: 10px;
+}
+
+.postDesc {
+  font-size: 12px;
+  margin-top: 10px;
+  width: 100%;
+  height: 200px;
+}
+
+.postButton {
+  margin-top: 10px;
+  width: 110px;
+  height: 35px;
+  border: none;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 10px;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+
+@media only screen and (max-width: 900px) {
+  .postList {
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .postList {
+    grid-template-columns: 1fr 1fr;
+    max-width: 550px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .postList {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+}

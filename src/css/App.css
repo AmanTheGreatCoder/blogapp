@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+:root {
+  --light-body-bg-color: #fff;
+
+  --light-post-bg-color: #000;
+  --light-post-text-color: #fff;
+
+  --light-nav-text-color: #000;
+
+  --light-button-bg-color: #fff;
+  --light-button-text-color: #000;
+
+  --dark-body-bg-color: #000;
+
+  --dark-post-bg-color: #fff;
+  --dark-post-text-color: #000;
+
+  --dark-nav-text-color: #fff;
+
+  --dark-button-bg-color: #000;
+  --dark-button-text-color: #fff;
+
+
+}
+
+.App {
+  transition: 0.5s ease-in;
+}
+
+#light {
+  background-color: var(--light-body-bg-color);
+}
+
+#dark {
+  background-color: var(--dark-body-bg-color);
+}
