@@ -9,7 +9,7 @@ export default function Login() {
 
   async function login(e) {
     e.preventDefault();
-    const response = await fetch("http://localhost:4000/login", {
+    const response = await fetch("https://blog-api-3tml.onrender.com/login", {
       method: "POST",
       body: JSON.stringify({ username, password }),
       headers: {
@@ -25,11 +25,11 @@ export default function Login() {
   }
 
   function google() {
-    window.open("http://localhost:4000/auth/google", "_self");
+    window.open("https://blog-api-3tml.onrender.com/auth/google", "_self");
   }
 
   function github() {
-    window.open("http://localhost:4000/auth/github", "_self");
+    window.open("https://blog-api-3tml.onrender.com/auth/github", "_self");
   }
 
   if (redirect === "home") {

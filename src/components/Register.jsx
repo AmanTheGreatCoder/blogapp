@@ -9,7 +9,7 @@ export default function RegisterPage() {
 
   async function register(event) {
     event.preventDefault();
-    const response = await fetch("http://localhost:4000/register", {
+    const response = await fetch("https://blog-api-3tml.onrender.com/register", {
       method: "POST",
       body: JSON.stringify({ username, password }),
       headers: { "content-Type": "application/json" },
@@ -22,11 +22,11 @@ export default function RegisterPage() {
   }
 
   function google() {
-    window.open("http://localhost:4000/auth/google", "_self");
+    window.open("https://blog-api-3tml.onrender.com/auth/google", "_self");
   }
 
   function github() {
-    window.open("http://localhost:4000/auth/github", "_self");
+    window.open("https://blog-api-3tml.onrender.com/auth/github", "_self");
   }
 
   if (redirect === "login") {
@@ -94,21 +94,5 @@ export default function RegisterPage() {
         </div>
       </div>
     </div>
-    // <form className="Register" onSubmit={register}>
-    //   <h1>Register</h1>
-    //   <input
-    //     value={username}
-    //     onChange={(e) => setUsername(e.target.value)}
-    //     type="text"
-    //     placeholder="username"
-    //   />
-    //   <input
-    //     value={password}
-    //     onChange={(e) => setPassword(e.target.value)}
-    //     type="password"
-    //     placeholder="password"
-    //   />
-    //   <button>Register</button>
-    // </form>
   );
 }
